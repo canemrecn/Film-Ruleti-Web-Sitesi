@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Film Ruleti</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link rel="stylesheet" href="c.css">
+<link rel="stylesheet" media="(max-width:500px)" href="mobile.css">
+<link rel="stylesheet" media="(min-width: 501px) and (max-width: 1280px)" href="tablet.css">
+</head>
+<body>
+<header class="bg-dark-blue">
+    <div class="container">
+        <h5>Film Ruleti</h5>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav flex-column">
+                        <!-- Diğer menü öğeleri buraya eklenebilir -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Kategoriler
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="aile_filmleri.html">Aile Filmleri</a></li>
+                                <li><a class="dropdown-item" href="aksiyonfilm.html">Aksiyon Filmleri</a></li>
+                                <li><a class="dropdown-item" href="animasyonfilmi.html">Animasyon Filmleri</a></li>
+                                <li><a class="dropdown-item" href="bilimkurgu.html">Bilimkurgu Filmleri</a></li>
+                                <li><a class="dropdown-item" href="bluerayfilm.html">BlueRay Filmleri</a></li>
+                                <li><a class="dropdown-item" href="cizgifilm.html">Çizgi Fİlmler</a></li>
+                                <li><a class="dropdown-item" href="dramfilm.html">Dram filmleri</a></li>
+                                <li><a class="dropdown-item" href="fantastikfilm.html">Fantastik Filmler</a></li>
+                                <li><a class="dropdown-item" href="gizemfilm.html">Gizem Filmleri</a></li>
+                                <li><a class="dropdown-item" href="index.html">IMDB En İyi 100 Filmleri</a></li>
+                                <li><a class="dropdown-item" href="komedifilm.html">Komedi Fimleri</a></li>
+                                <li><a class="dropdown-item" href="korkufilm.html">Korku Filmleri</a></li>
+                                <li><a class="dropdown-item" href="müzikalfilm.html">Müzikal Filmleri</a></li>
+                                <li><a class="dropdown-item" href="psikolojikfilm.html">Psikolojik Filmler</a></li>
+                                <li><a class="dropdown-item" href="romantikfilm.html">Romantik Filmler</a></li>
+                                <li><a class="dropdown-item" href="savasfilm.html">Savaş Filmleri</a></li>
+                                <li><a class="dropdown-item" href="sucfilm.html">Suç Filmleri</a></li>
+                                <li><a class="dropdown-item" href="tarihfilm.html">Tarih Filmleri</a></li>
+                                <li><a class="dropdown-item" href="yerlifilm.html">Yerli Filmler</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="container text-center"> <!-- Bootstrap sınıfını kullanarak metni ve düğmeyi ortala -->
+    <button id="showPosterButton" class="btn btn-outline-warning"><h2>Yerli Filmler Ruletini Başlat</h2></button> <!-- Bootstrap düğme sınıfını kullanarak düğmeyi özelleştir -->
+    <div id="posterContainer">
+        <img id="moviePoster" src="">
+    </div>
+</div>
+<button type="button" class="btn btn-outline-primary" onclick="location.reload()"><p>Yeniden Başlat</p></button>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+<script src="yerlifilm.js"></script>
+</body>
+</html>
